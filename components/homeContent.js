@@ -48,13 +48,13 @@ export const homeContent = `
     </div>
     </div>
   <div class="image-container">
-    <img class="cv-image" src="./public/assets/Foto CV.jpeg" alt="cv-image">
+    <img class="cv-image" src="./assets/Foto CV.jpeg" alt="cv-image">
   </div>
 </div>
 `;
 // <a
 //   class="link-intro"
-//   href="./public/assets/CV Manuel González.pdf"
+//   href="./assets/CV Manuel González.pdf"
 //   download="CV Manuel González García"
 //   >Descarga mi CV</a
 // >

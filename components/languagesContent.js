@@ -11,7 +11,7 @@ export const languagesContent = `
             </div>
       </div>
           <h2 class="text">HTML</h2>
-          <img src="./public/assets/icons8-html-48.png" alt="html-icon" />
+          <img src="./assets/icons8-html-48.png" alt="html-icon" />
     </div>
   </div>
   <div class="card">
@@ -26,7 +26,7 @@ export const languagesContent = `
             </div>
       </div>
           <h2 class="text">CSS</h2>
-          <img src="./public/assets/icons8-css-48.png" alt="css-icon" />
+          <img src="./assets/icons8-css-48.png" alt="css-icon" />
     </div>
   </div>
   <div class="card">
@@ -41,7 +41,7 @@ export const languagesContent = `
             </div>
       </div>
           <h2 class="text">JavaScript</h2>
-          <img src="./public/assets/icons8-js-48.png" alt="js-icon" />
+          <img src="./assets/icons8-js-48.png" alt="js-icon" />
     </div>
   </div>
   <div class="card">
@@ -56,7 +56,7 @@ export const languagesContent = `
             </div>
       </div>
           <h2 class="text">React</h2>
-          <img src="./public/assets/icons8-react-40.png" alt="js-icon" />
+          <img src="./assets/icons8-react-40.png" alt="js-icon" />
     </div>
   </div>
 `;

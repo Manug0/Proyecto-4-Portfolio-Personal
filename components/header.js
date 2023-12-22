@@ -1,6 +1,6 @@
 export const header = `
 <nav class="nav-container">
-    <img class="logo menu" src="./public/assets/Manu-logo.jpeg" alt="logo" />
+    <img class="logo menu" src="./assets/Manu-logo.jpeg" alt="logo" />
     <div class="main-menu">
       <ul class="nav-list">
         <li>
@@ -25,7 +25,3 @@ export const header = `
     </div>
 </nav>
 `;
-{
-	/* <a href="#" class="click-navbar-responsive"></a>
-<input type="checkbox" id="chkToggle" /> */
-}
