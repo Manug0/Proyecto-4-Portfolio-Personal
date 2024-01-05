@@ -582,10 +582,13 @@ footer {
 		flex-direction: column;
 	}
 	ul.nav-list li:last-child {
-		margin-bottom: 3rem;
+		margin-bottom: rem;
 	}
 	.close-nav {
 		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
 	}
 	.ri-close-line {
 		font-size: 1.5rem;

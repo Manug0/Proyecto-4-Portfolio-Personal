@@ -12,17 +12,17 @@ export const homeContent = `
       <div class="socials">
           <ul>
             <li>         
-              <a href="https://www.linkedin.com/in/manuel-gonz%C3%A1lez-garc%C3%ADa/">
+              <a href="https://www.linkedin.com/in/manuel-gonz%C3%A1lez-garc%C3%ADa/" target="_blank" rel="noopener">
               <i class="ri-linkedin-box-line"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/Manug0?tab=repositories">
+              <a href="https://github.com/Manug0?tab=repositories"target="_blank" rel="noopener">
               <i class="ri-github-line"></i>
               </a>
             </li>
             <li>
-              <a href="mailto:mgongar12@gmail.com">
+              <a href="mailto:mgongar12@gmail.com" target="_blank" rel="noopener">
               <i class="ri-mail-line"></i>
               </a>
             </li>
