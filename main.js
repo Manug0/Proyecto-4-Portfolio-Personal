@@ -2,7 +2,7 @@ import "./style.css";
 
 import { header } from "./components/header";
 import { homeContent } from "./components/homeContent";
-import { languagesContent } from "./components/languagesContent";
+import { techContent } from "./components/techContent";
 import { experienceContent } from "./components/experienceContent";
 import { projectsContent } from "./components/projectsContent";
 import { footer } from "./components/footer";
@@ -17,8 +17,8 @@ const createSectionHome = document.createElement("section");
 createSectionHome.classList.add("homeContent");
 createSectionHome.id = "home";
 
-const createSectionLanguages = document.createElement("section");
-createSectionLanguages.classList.add("languagesContent");
+const createSectionTech = document.createElement("section");
+createSectionTech.classList.add("techContent");
 
 const createSectionExperience = document.createElement("section");
 createSectionExperience.classList.add("experienceContent");
@@ -36,7 +36,7 @@ createScrollUp.classList.add("scrollup");
 document.body.appendChild(createHeader);
 document.body.appendChild(createMain);
 document.querySelector("main").appendChild(createSectionHome);
-document.querySelector("main").appendChild(createSectionLanguages);
+document.querySelector("main").appendChild(createSectionTech);
 document.querySelector("main").appendChild(createSectionExperience);
 document.querySelector("main").appendChild(createSectionProjects);
 document.querySelector("main").appendChild(createScrollUp);
@@ -44,13 +44,13 @@ document.body.appendChild(createFooter);
 
 document.querySelector("header").innerHTML = header;
 document.querySelector(".homeContent").innerHTML = homeContent;
-document.querySelector(".languagesContent").innerHTML = languagesContent;
+document.querySelector(".techContent").innerHTML = techContent;
 document.querySelector(".experienceContent").innerHTML = experienceContent;
 document.querySelector(".projectsContent").innerHTML = projectsContent;
 document.querySelector("footer").innerHTML = footer;
 document.querySelector(".scrollup").innerHTML = scrollUp;
 
-// Lógica
+// Funcionalidad
 
 const themeButton = document.getElementById("change-theme-button");
 const body = document.body;
@@ -105,10 +105,28 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-	`.hero-container, .keypoints, .experienceContent > h2, .projects-section > h2, .experience-container > div:nth-child(1), .experience-container > div:nth-child(3)`,
+	`.hero-container, .keypoints, .experienceContent > h2, .projects-section > h2, .experience-container > div:nth-child(1), .experience-container > div:nth-child(3), .mySearch`,
 	{ origin: "left" }
 );
 sr.reveal(`.image-container, .experience-container > div:nth-child(2) `, {
 	origin: "right",
 });
 sr.reveal(`.card, .projects-list > ul`, { interval: 150 });
+
+function myFunction() {
+	let input, filter, cards;
+	input = document.getElementById("mySearch");
+	filter = input.value.toUpperCase();
+	cards = document.querySelectorAll(".card");
+
+	for (let i = 0; i < cards.length; i++) {
+		let title = cards[i].querySelector(".text");
+		if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+			cards[i].style.display = "";
+		} else {
+			cards[i].style.display = "none";
+		}
+	}
+}
+
+document.getElementById("mySearch").onkeyup = myFunction;

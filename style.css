@@ -274,7 +274,24 @@ header a:hover {
 }
 
 /* LENGUAJES */
-
+.search-container {
+	display: flex;
+	justify-content: start;
+	width: 20%;
+	margin: 2rem 0 2rem 12rem;
+}
+.mySearch {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	min-width: 105px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+	font-size: 16px;
+	transition: 0.5s;
+}
 .languagesContent {
 	position: relative;
 	min-height: 35vh;
@@ -561,6 +578,11 @@ footer {
 		width: 30px;
 		height: 30px;
 	}
+
+	.mySearch {
+		font-size: 12px;
+		margin-left: -4rem;
+	}
 }
 
 @media (max-width: 768px) {
@@ -696,6 +718,11 @@ footer {
 	.projects-list > ul {
 		width: 100%;
 	}
+	.mySearch {
+		font-size: 8px;
+		margin-left: -4rem;
+		padding: 8px 16px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -709,5 +736,10 @@ footer {
 
 	.experienceContent .experience-container {
 		flex-direction: column;
+	}
+
+	.mySearch {
+		font-size: 6px;
+		margin-left: -6rem;
 	}
 }

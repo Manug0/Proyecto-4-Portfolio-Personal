@@ -1,4 +1,8 @@
-export const languagesContent = `
+export const techContent = `
+<div class="search-container">
+  <input type="text" id="mySearch" class="mySearch" placeholder="Buscar tecnologías">
+</div>
+<div class="languagesContent">
   <div class="card">
     <div class="box">
       <div class="percent">
@@ -59,4 +63,5 @@ export const languagesContent = `
           <img src="./assets/icons8-react-40.png" alt="js-icon" />
     </div>
   </div>
+</div>
 `;
